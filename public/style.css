@@ -1,0 +1,231 @@
+/* 
+Global CSS 
+Theme   : Website Pribadi
+Author  : IK1
+Version : 1.0
+*/
+
+body { margin:0; background-image: url(images/bg-texture.jpg); background-attachment: fixed; }
+a { color: crimson; text-decoration: none;}
+
+/*---------------------*/
+/*   HEADER            */
+/*---------------------*/
+header { 
+    background-color: dodgerblue;
+    padding: 10px;
+    text-align: center;
+}
+
+header img {
+    animation: flipInX 2s infinite;
+}
+
+/*---------------------*/
+/*   Navigation        */
+/*---------------------*/
+nav {
+    position: relative;
+    background-color: #380d0d;
+}
+
+nav a {
+    font-family: 'Verdana';
+    font-size: 22px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;      
+}
+nav a.active,nav a:hover {
+    background-color: goldenrod;
+    color: #000;
+}
+
+.fixed {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+/*---------------------*/
+/*   Content           */
+/*---------------------*/
+#content {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#content h1 {
+    background-color: aquamarine;
+    margin: 0 0 50px 0;
+    color:crimson;
+    text-transform: uppercase;
+    font-family: 'Verdana';
+    border-left: 8px double crimson;
+    padding: 15px;
+}
+
+#content h2 {
+    color:blueviolet;
+    font-size: 22px;
+    font-family: 'Verdana';
+}
+
+#content p {
+    font-size: 18px;
+    margin: 10px 0;
+    font-family: 'Arial';
+    color: #666;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Tabel */
+table { 
+    position: relative;
+    width:100%;
+    border:1px solid #380d0d;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: coral;
+}
+
+table th,table td {
+    padding: 5px 10px;
+    border:1px solid #380d0d;
+    font-family: 'Verdana';
+}
+
+table th {
+    padding: 15px 10px;
+}
+
+/* Form */
+form {
+    position: relative;
+    padding: 15px 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+form label {
+    display: block;
+    color: darksalmon;
+}
+
+form input[type="text"],form input[type="email"],form textarea{ 
+    padding: 8px 10px;
+    font-size: 18px;
+    color: #380d0d;
+    border: 1px solid #380d0d;
+    width: 100%;
+ }
+
+form input[type="submit"],form input[type="reset"] {
+    background-color: coral;
+    color: #000;
+    border: 1px solid #380d0d;
+    padding: 10px 15px;
+    width: 45%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+form input[type="submit"]:hover,form input[type="reset"]:hover {
+    background-color: black;
+    color: burlywood;
+}
+
+/*---------------------*/
+/*   Product           */
+/*---------------------*/
+
+#product {
+    position:relative;
+    padding: 25px 0;
+}
+
+#product .product-item {
+    position: relative;
+    float: left;
+    width: 25%;
+    margin: 15px 0;
+}
+
+#product .product-item .diskon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #810c0c;
+    color:#f1de35;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+#product .product-item img {
+    width: 100%;
+}
+
+#product .product-item .meta {
+    position: relative;
+    padding: 0 10px;
+}
+
+#product .product-item .meta h3 {
+    position: relative;
+    font-size: 18px;
+    color: #0a2ea7;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#product .product-item .meta p {
+    color: #666;
+    font-size: 14px;
+} 
+
+#product .product-item .meta p.price {
+    color: #810c0c;
+    font-size: 20px;
+    text-align: right;
+    font-weight: 600;
+}
+
+#product .product-item .meta a {
+    display: block;
+    padding: 8px 10px;
+    background-color: #bd7707;
+    color: #000;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;    
+}
+
+#product .product-item .meta a:hover {
+    background-color: #000;
+    color: #bd7707;
+}
+
+.clear { clear: both; }
+
+/*---------------------*/
+/*   Footer            */
+/*---------------------*/
+footer {
+    background-color: dodgerblue;
+    padding: 3px 10px;
+    color: #000;
+    font-family: 'Verdana';
+    font-size: 18px;
+    text-align: center;
+}
